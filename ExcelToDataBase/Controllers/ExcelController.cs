@@ -81,6 +81,7 @@ namespace ExcelToDataBase.Controllers
     private static void SaveDisciplina(List<Disciplina> disciplina)
     {
              using (var connection = new SqlConnection(connectionString: "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Curso;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+                //Teste string
             //using (var connection = new SqlConnection(connectionString: "Server=(localdb)\\MSSQLLocalDB;Database=Curso;Trusted_Connection=true;"))
             {
                 connection.Insert(disciplina);
